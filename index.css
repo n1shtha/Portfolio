@@ -7,10 +7,29 @@
     color: #8a8a8a;
 }
 
+.custom-list {
+  list-style-type: none;
+}
+
+#human-text{
+  background: linear-gradient(to right, #e0e012, green, #1ec7c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-underline {
     text-decoration: underline;
-    text-decoration-color: #dfdc3bbf;
+    text-decoration-color: #d8d64ebf;
     text-underline-offset: 10px;
+}
+
+#onproject1 {
+    background-position: center;
+    background-size: 750px 380px;
+}
+
+#onproject3 {
+    background-position: bottom;
 }
 
 .typewriter h1 {
@@ -23,6 +42,15 @@
       blink-caret .75s step-end infinite;
   }
   
+.social-link {
+  color: white;
+}
+
+.social-link > i:hover {
+  cursor: pointer;
+  color: #8a8a8a!important;
+}
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -36,6 +64,7 @@
   }
 
   .line-1{
+    color: black;
     top: 50%;  
     width: 24em;
     margin-top: 2em;

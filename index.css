@@ -1,0 +1,61 @@
+.nav-link {
+    color: black;
+  }
+
+.nav-link:hover {
+    cursor: pointer;
+    color: #8a8a8a;
+}
+
+.text-underline {
+    text-decoration: underline;
+    text-decoration-color: #dfdc3bbf;
+    text-underline-offset: 10px;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #964444; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #964444; }
+  }
+
+  .line-1{
+    top: 50%;  
+    width: 24em;
+    margin-top: 2em;
+    border-right: 4px solid rgba(255,255,255,.75);
+    font-size: 145%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44, end) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #c5c334bf;}
+  to{border-right-color: transparent;}
+}

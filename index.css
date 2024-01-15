@@ -1,3 +1,8 @@
+.out-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-link {
     color: black;
   }
@@ -13,6 +18,7 @@
 
 #human-text{
   background: linear-gradient(to right, #e0e012, green, #1ec7c7);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

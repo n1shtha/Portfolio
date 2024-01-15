@@ -17,13 +17,13 @@
         <p class="navbar-brand mt-2 ms-5 font-monospace" style="color: #a09e2abf;">Nishtha Das</p>
         <ul class="nav justify-content-end mt-2">
             <li class="nav-item">
-                <p class="nav-link">About</p>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <p class="nav-link">Work</p>
+                <a class="nav-link" href="https://n1shtha.github.io/work">Work</a>
             </li>
             <li class="nav-item me-4">
-                <p class="nav-link">Fun</p>
+                <p class="nav-link" href="https://n1shtha.github.io/fun">Fun</p>
             </li>
         </ul>
     </div>
@@ -31,12 +31,12 @@
         <h1 class="display-5 fw-bold text-body-emphasis">Hello, I'm Nishtha!</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mt-4 mb-4" style="color: #464646;">A 4th-year Computer Science undergraduate student at
-                Ashoka University, looking to
+                <a class="out-link" href="https://ashoka.edu.in">Ashoka University</a>, looking to
                 create ground-level impact with <strong id="human-text">human</strong>-centred
                 solutions.
             </p>
         </div>
-        <div class="social-links-container">
+        <div class="social-links-container text-left">
             <a class=" social-link p-3" href="mailto:nishtha3@hotmail.com">
                 <i class="bi bi-envelope-plus-fill" style="font-size: 2.2rem; color: black;"></i>
             </a>
@@ -46,8 +46,8 @@
             <a class="social-link p-3" href="https://linkedin.com/in/nishthadas">
                 <i class="bi bi-linkedin" style="font-size: 1.9rem; color: black;"></i>
             </a>
-            <a class="social-link p-3" href="https://twitter.com/nishthasdfghjkl">
-                <i class="bi bi-twitter-x" style="font-size: 1.9rem; color: black;"></i>
+            <a class="social-link p-3" href="https://hci.social/@nishtha">
+                <i class="bi bi-mastodon" style="font-size: 1.9rem; color: black;"></i>
             </a>
         </div>
     </div>
@@ -89,7 +89,7 @@
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
                     style="background-image: url('assets/onproject3.png');" id="onproject3">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Designing VSCO for Desktop</h3>
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Adapting VSCO for Desktop</h3>
                         <ul class="d-flex list-unstyled mt-auto">
                             <i class="bi bi-tags-fill me-2"></i>
                             <li class="d-flex align-items-center me-3">
@@ -101,59 +101,63 @@
             </div>
         </div>
     </div>
-    <div class="container px-4 py-5">
-        <h2 class="pb-2 text-underline">About me</h2>
-        <div class="row justify-content-evenly">
-            <div class="col-4 mt-5">
-                <img src="assets/websiteprofile.jpeg" alt="profile" class="img-fluid rounded">
-            </div>
-            <div class="col-6 mt-3">
-                <div class="font-monospace line-1 anim-typewriter">
-                    <h2>Designing for the edge case.</h2>
+    <section id="about">
+        <div class="container px-4 py-5">
+            <h2 class="pb-2 text-underline">About me</h2>
+            <div class="row justify-content-evenly">
+                <div class="col-4 mt-5">
+                    <img src="assets/websiteprofile.jpeg" alt="profile" class="img-fluid rounded">
                 </div>
-                <div style="color: #464646">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sollicitudin purus. Mauris sed
-                        lacinia ante. In consectetur mauris sed pharetra condimentum. Maecenas consequat, tellus et
-                        condimentum pharetra, turpis orci dictum risus, sed ultricies massa ipsum sed ante. In
-                        vestibulum et
-                        urna quis tempor. </p>
-                    <p>
-                        Morbi mattis nunc sit amet eros sollicitudin cursus. Fusce ut eros sit amet
-                        ligula condimentum vulputate id sit amet augue. Maecenas congue sapien et lorem suscipit
-                        tincidunt sit amet sed diam.
-                    </p>
-                    <ul class="custom-list">
-                        <li>
-                            <p>
-                                <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Accessibility design
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Social computing
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Ubiquitous computing
-                            </p>
-                        </li>
-                    </ul>
+                <div class="col-6 mt-3">
+                    <div class="font-monospace line-1 anim-typewriter">
+                        <h2>Designing for the edge case.</h2>
+                    </div>
+                    <div style="color: #464646">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sollicitudin purus. Mauris
+                            sed
+                            lacinia ante. In consectetur mauris sed pharetra condimentum. Maecenas consequat, tellus et
+                            condimentum pharetra, turpis orci dictum risus, sed ultricies massa ipsum sed ante. In
+                            vestibulum et
+                            urna quis tempor. </p>
+                        <p>
+                            Morbi mattis nunc sit amet eros sollicitudin cursus. Fusce ut eros sit amet
+                            ligula condimentum vulputate id sit amet augue. Maecenas congue sapien et lorem suscipit
+                            tincidunt sit amet sed diam.
+                        </p>
+                        <ul class="custom-list">
+                            <li>
+                                <p>
+                                    <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Accessibility design
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Social computing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="bi bi-flower2" style="color: #a09e2abf;"></i> Ubiquitous computing
+                                </p>
+                            </li>
+                        </ul>
 
-                    <p>Suspendisse vitae pharetra mauris. Suspendisse sapien magna, faucibus et metus nec, egestas
-                        lacinia
-                        ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                        himenaeos.
-                        Nullam eleifend justo at risus maximus, nec fermentum augue pellentesque. Maecenas condimentum
-                        ac
-                        augue at imperdiet. Pellentesque sodales magna dictum, facilisis metus ac, accumsan tortor.
-                        Integer
-                        eu est tellus. Suspendisse vitae finibus dui, fermentum finibus dui.</p>
+                        <p>Suspendisse vitae pharetra mauris. Suspendisse sapien magna, faucibus et metus nec, egestas
+                            lacinia
+                            ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos.
+                            Nullam eleifend justo at risus maximus, nec fermentum augue pellentesque. Maecenas
+                            condimentum
+                            ac
+                            augue at imperdiet. Pellentesque sodales magna dictum, facilisis metus ac, accumsan tortor.
+                            Integer
+                            eu est tellus. Suspendisse vitae finibus dui, fermentum finibus dui.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <footer class="container-md">
         <p class="font-monospace m-4" style="color: #a09e2abf;">&#169 Copyright 2024 Nishtha Das</p>
     </footer>

@@ -1,6 +1,53 @@
+.cap-text {
+  color: #646464;
+  font-size: 0.9rem;
+}
+
+.sub-text {
+  color: black;
+}
+
+.resource-img-sm {
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.resource-img-md {
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.resource-img-lg {
+  max-height: 500px;
+  margin-bottom: 20px;
+}
+
+.det-heading {
+  color: #bbba67bf;
+}
+
+.overview-img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.explore-link {
+  text-decoration: none;
+  color: #a09e2abf;
+}
+
+.explore-link:hover {
+  color: #bbba67bf;
+}
+
+.desc-text {
+  color: #646464;
+}
+
 .out-link {
   text-decoration: none;
-  color: inherit;
+  color: #afaeae;
 }
 
 .nav-link {
@@ -9,7 +56,7 @@
 
 .nav-link:hover {
     cursor: pointer;
-    color: #8a8a8a;
+    color: #afaeae;
 }
 
 .custom-list {

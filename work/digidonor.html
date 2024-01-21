@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nishtha Das</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #F6F5F5;">
+    <div class="navbar container-fluid">
+        <p class="navbar-brand mt-2 ms-5 font-monospace" style="color: #a09e2abf;">Nishtha Das</p>
+        <ul class="nav justify-content-end mt-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="overview">Work</a>
+            </li>
+            <li class="nav-item me-4">
+                <p class="nav-link" href="https://n1shtha.github.io/fun">Fun</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container px-4 py-5">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="col d-flex flex-column align-items-start gap-3">
+                <h2 class="fw-bold text-body-emphasis">DigiDonor: seamless donations <br> with Blockchain</h2>
+                <p class="desc-text">Transforming donation systems and improving transparency by removing the role of
+                    middle-men organisations. This permissioned platform facilitates purpose-specific donations,
+                    real-time tracking, and anonymity.</p>
+                <div>
+                    <p class="font-monospace mb-0">Skip ahead to the product!</p>
+                    <a href="#"><i class="bi bi-play-btn-fill mt-0 nav-link" style="font-size: 3rem;"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <div class="col d-flex align-items-start flex-column gap-2">
+                        <h4 class="fw-semibold mb-2 text-body-emphasis text-underline">Team</h4>
+                        <p class="text-body-secondary">Nishtha Das, Chanchal Bajoria</p>
+                    </div>
+                    <div class="col d-flex align-items-start flex-column gap-2">
+                        <h4 class="fw-semibold mb-2 text-body-emphasis text-underline">Role</h4>
+                        <p class="text-body-secondary">Hyperledger Fabric application development, UI design</p>
+                    </div>
+                    <div class="col d-flex align-items-start flex-column gap-2">
+                        <h4 class="fw-semibold mb-2 text-body-emphasis text-underline">Technology</h4>
+                        <p class="text-body-secondary">Hyperledger Fabric, NodeJS, React, Javascript, HTML, CSS, Docker
+                        </p>
+                    </div>
+                    <div class="col d-flex align-items-start flex-column gap-2">
+                        <h4 class="fw-semibold mb-2 text-body-emphasis text-underline">Timeframe</h4>
+                        <p class="text-body-secondary">2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-4 py-5">
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">OVERVIEW</b></h4>
+            <p class="desc-text">The humanitarian sector suffers from critical challenges when it comes to aid/donation
+                transactions. Transparency is often lacking in the management of donations, which has led to a commonly
+                recurring pattern of misallocation, fraud and inefficiency. Donors usually have no way of verifying
+                first-hand whether their funds are being used for the purpose they had intended. A large part of this is
+                due to the centralisation of management, where an aid organisation or other middle-man routes all
+                communication between donors and recipients.
+            </p>
+        </div>
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">RESEARCH</b></h4>
+            <span>
+                <i class="bi bi-flower2 flex-shrink-0" style="color: #a09e2abf;"></i>
+                <i class="sub-text">Why Blockchain?</i>
+            </span>
+            <p class="desc-text">Blockchain-based solutions propose significant potential for improvement in donation
+                management by carrying out secure and decentralised transactions.</p>
+            <p class="desc-text">Blockchain's distributed ledger ensures transparency by recording every transaction in
+                a secure and immutable manner, which is essential for the sensitive information we are storing.
+                Hyperledger Fabric, being a permissioned framework, allows for controlled access, ensuring that only
+                authorised entities can participate in the network. This feature enables donors and recipients to
+                execute user-specific operations on a donation request, right from its initiation to final funding.
+            </p>
+            <p class="desc-text">Hyperledger Fabric's smart contracts enable programmable and automated transactions,
+                eliminating the need for intermediaries. This decentralised approach streamlines the donation process,
+                reducing the inefficiency and potential deceit associated with traditional donation channels.</p>
+            <span>
+                <i class="bi bi-flower2 flex-shrink-0" style="color: #a09e2abf;"></i>
+                <i class="sub-text">User segmentation</i>
+            </span>
+            <p class="desc-text">We wished to first implement this for the context of our university, and then use it as
+                proof of concept for larger use cases. Hence, DigiDonor considers 3 distinct users: students (who
+                require funds), donors (who provide funds) and outlets (where funds can be expended). To start, students
+                submit detailed donation requests on the platform, outlining their needs. Potential donors then explore
+                and select a cause aligned with their values, pledging tokens through a fixed rate determined by the
+                platform. These tokens are uniquely generated and bound to the selected donation request, ensuring
+                transparency. Subsequently, students redeem the tokens directly with designated outlets upon meeting the
+                request criteria, and the platform updates the request to close it. This streamlined process, using
+                platform-generated tokens as opposed to aid organisations, establishes a secure and traceable system for
+                facilitating student donations.
+            </p>
+            <p class="desc-text">The following were our goals based on the requirements of these user groups:</p>
+            <ul class="custom-list">
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Transparent
+                            donation recording</b>: This entails maintaining an accessible and comprehensive asset where
+                        each donation request is recorded extensively, specifying details such as the purpose of the
+                        donation and associated outlet. The objective is to create a transparent and tamper-proof trail
+                        for donors and recipients.
+
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Facilitating
+                            donation agreements</b>:
+                        This feature will act as a seamless interaction between donors and recipients so that they can
+                        indirectly agree upon the terms of a donation. Students should be able to describe their needs
+                        clearly and donors should be able to ensure that their donations are only spent towards approved
+                        needs.
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Real-time status
+                            reporting</b>: This is integral to keeping stakeholders informed and engaged. We aim to
+                        provide the ability to check for updates on the progress of donation requests, ensuring that
+                        both donors and recipients are well-informed about the current status of their transactions.
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Identity management
+                            and anonymity</b>: DigiDonor hopes to strike a balance between verifying the identity of
+                        recipients to prevent misuse of funds and respecting the anonymity preferences of both
+                        recipients and donors. As a base case, all information about a donation request at any stage of
+                        its lifecycle should be identifiable by its ID and not the recipient or donor.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">IDEATION</b></h4>
+            <span>
+                <i class="bi bi-flower2 flex-shrink-0" style="color: #a09e2abf;"></i>
+                <i class="sub-text">Network architecture</i>
+            </span>
+            <p class="desc-text">
+                For the local university context. we worked with a small network with 1 client and 1 organisation with 2
+                peers, as shown in the figure below. The three types of users: students, donors, and outlets are
+                connected to a central client upon registration which broadcasts all transactions to the network.
+            </p>
+            <div class="col-auto mx-auto">
+                <img src="../assets/digidonorres1.jpg" class="resource-img-md img-fluid rounded">
+            </div>
+            <span>
+                <i class="bi bi-flower2 flex-shrink-0" style="color: #a09e2abf;"></i>
+                <i class="sub-text">User flow</i>
+            </span>
+            <p class="desc-text">
+                Each user type has role-specific functionalities on their dashboard. The student dashboard allows the i)
+                querying of past requests by the student using their username and ii) the creation of an asset (request)
+                transaction using a platform-generated request ID. The donor dashboard has the ability to i) generate
+                and get tokens by creating a verified connection to the network, ii) query past donations by the donor
+                using their username, iii) query all open requests by creating a verified connection to the network, and
+                iv) create a request modification transaction by using a platform-generated pledge ID, array of tokens
+                and username. Lastly, the outlets play a minimal role in our setup; they only come in when it’s time to
+                redeem the token so their functionality is to create a request modification transaction by using the
+                aforementioned pledge ID and a student’s username to verify and accordingly update the request’s status.
+                This is a visualisation of the client-side application user flow, which takes care of all three
+                trajectories.
+            </p>
+            <div class="col-auto mx-auto">
+                <img src="../assets/digidonorres2.jpg" class="resource-img-md img-fluid rounded">
+            </div>
+        </div>
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">IMPLEMENTATION</b></h4>
+            <p class="desc-text">The final prototype communicates with the network and front-end application to take
+                user input and subsequently, execute commands. The ledger state is updated by chain code functions and
+                modifications to our asset: the donation request. For a more technical overview of the chaincode and
+                asset, please access our report <a
+                    href="https://drive.google.com/file/d/1GvhhvRpE3fvgMTBKkX9RaZdn_0-h-ZG8/view?usp=sharing"
+                    class="out-link">here</a>. Some key frames and
+                considerations for students and donors are
+                demonstrated below:
+            </p>
+            <div class="container text-center">
+                <div class="row mb-4">
+                    <div class="col">
+                        <img src="../assets/digidonorres3.jpg" class="resource-img-md img-fluid rounded">
+                        <p class="cap-text">Sign up page for donors and students</p>
+                    </div>
+                    <div class="col">
+                        <img src="../assets/digidonorres4.jpg" class="resource-img-md img-fluid rounded">
+                        <p class="cap-text">Donor dashboard</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img src="../assets/digidonorres5.jpg" class="resource-img-md img-fluid rounded">
+                        <p class="cap-text">Student dashboard</p>
+                    </div>
+                    <div class="col">
+                        <img src="../assets/digidonorres6.jpg" class="resource-img-md img-fluid rounded">
+                        <p class="cap-text">Token redemption page for students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">NEXT STEPS</b></h4>
+            <p class="desc-text">If given a chance to revise or build upon our work, I would focus on the following:</p>
+            <ul class="custom-list">
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Interaction with stakeholders</b>:
+                        Since UX research was not the project’s priority, it was largely overlooked. This work can
+                        benefit immensely from research into the aid and donation sector.
+
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Further de-identification</b>:
+                        Since donation handling and tracking deals with sensitive information, more anonymisation
+                        through hashing or other methods would be advantageous.
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Visualisations and charts</b>: It
+                        could be
+                        beneficial for the donors, especially, to quickly know at a glance how their donations are being
+                        used. For example, a pie chart could represent the frequency of different causes being funded.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="row gap-3 mb-5">
+            <h4><b class="det-heading">TAKEAWAYS</b></h4>
+            <p class="desc-text">Through this experience, I was introduced to <b>proof of concept</b>. I admire how the
+                method
+                can be used to demonstrate feasibility and mitigate risks early on in the product development cycle.
+                This is especially beneficial for <b>design sprints</b> because of their rapid prototyping and testing
+                format.
+                Additionally, I was pleasantly surprised to see how <b>unconventional technologies</b> can be used to
+                solve
+                critical problems. Intuitively, I would not have imagined Blockchain as a solution for the social
+                sector. This motivated me to look beyond standard tech stacks and frameworks to identify unique areas
+                for problem-solving.
+            </p>
+        </div>
+    </div>
+    <footer class="container-md">
+        <p class="font-monospace m-4" style="color: #a09e2abf;">&#169 Copyright 2024 Nishtha Das</p>
+    </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="../index.js"></script>
+</body>
+
+</html>

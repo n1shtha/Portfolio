@@ -33,14 +33,12 @@
                 <h2 class="fw-bold text-body-emphasis">Mapping anonymity in <br> Partition literature</h2>
                 <p class="desc-text">An interactive exploration of unnamed characters across literature from the 1947
                     India-Pakistan
-                    Partition. Our maps represent data about these characters in zones of religious conflict, along
-                    with gender and space-modality views.An interactive exploration of unnamed characters across
-                    literature from the 1947 India-Pakistan
-                    Partition. Our maps represent data about these characters in zones of religious conflict, along
+                    Partition. These maps represent data about these characters in zones of religious conflict, along
                     with gender and space-modality views.</p>
                 <div>
                     <p class="font-monospace mb-0">Skip ahead to the product!</p>
-                    <a href="#"><i class="bi bi-play-btn-fill mt-0 nav-link" style="font-size: 3rem;"></i></a>
+                    <a href="https://n1shtha.github.io/MappingAnonymity/"><i class="bi bi-play-btn-fill mt-0 nav-link"
+                            style="font-size: 3rem;"></i></a>
                 </div>
             </div>
             <div class="col">
@@ -69,33 +67,106 @@
     <div class="container px-4 py-5">
         <div class="row gap-3 mb-5">
             <h4><b class="det-heading">OVERVIEW</b></h4>
-            <p class="desc-text">We know the Partition through personal history, which means there is a lot missing:
-                partly because of the messiness of memory, and partly because people have repressed or erased memories
-                of violence. Thus, in traditional accounts of the Partition, there is reason to cast doubt on existing
-                and missing data. In
-                narratives where identity is a matter of life and death, what does it mean for a text to not reveal a
-                character’s gender, religion, etc.? And what does it mean to not reveal their name, something so basic
-                to their identity? In many ways, these are also concerns of data: what does it mean when a discipline
-                that strives to categorise and label everything cannot cognise something in a text?</p>
+            <p class="desc-text">The India-Pakistan Partition, which took place in 1947, is a significant event in
+                global history with lasting repercussions. The Partition marked the end of British colonial rule in the
+                Indian subcontinent and the creation of two independent nations – India and Pakistan. This seismic event
+                was accompanied by widespread communal violence, mass migrations, and large-scale loss of life.
+            </p>
+            <p class="desc-text">The Partition was globally significant due to its role in the broader narrative of
+                decolonisation, its impact on regional geopolitics, and the ongoing implications for communal relations
+                in South Asia. Its effects are still felt today, making it a crucial chapter in history and an abundant
+                area for study.</p>
+            <p class="desc-text">
+                Citizens of India and Pakistan know the Partition through personal history, which means a lot is
+                missing: partly because of the messiness of memory, and partly because people have repressed or erased
+                memories of violence. Thus, in traditional accounts of the Partition, there is reason to cast doubt on
+                existing and missing data. In narratives where identity is a matter of life and death, what does it mean
+                for a text to not reveal a character’s gender, religion, etc.? And what does it mean to not reveal their
+                name, something so basic to their identity? In many ways, these are also concerns of data: what does it
+                mean when a discipline that strives to categorise and label everything cannot cognise something in a
+                text?
+            </p>
         </div>
         <div class="row gap-3 mb-5">
             <h4><b class="det-heading">IDEATION</b></h4>
-            <p class="desc-text">TO-DO</p>
+            <p class="desc-text">In the months leading up to this project, our team had already been logging low-level
+                data on novels and poems from Partition literature. This included data on characters, locations and
+                events. We spent a lot of time fleshing out the data for each data group, given the weight of the
+                stories we were dealing with. This required a great deal of inference to gauge information like a
+                character’s links to a mob or a location’s religious affinity. Based on such insights, we had a solid
+                point of reference to draw relations between data points.
+            </p>
+            <p class="desc-text">
+                As a Digital Humanities project, there was significant scope for technical intervention. Hence, to stay
+                true to our goal of bringing background characters to light, we planned to extract unnamed characters
+                from our database and conduct a qualitative analysis on the same. Additionally, we wished to focus on
+                one or two texts that dealt with character naming in unique ways. From our earlier close reading of the
+                texts, we knew the two would be Saadat Hasan Manto’s <i>Mozail</i> and Khushwant Singh’s <i>A Train to
+                    Pakistan</i>.
+            </p>
         </div>
         <div class="row gap-3 mb-5">
             <h4><b class="det-heading">IMPLEMENTATION</b></h4>
-            <p class="desc-text">used mapbox, QGIS and SQL querying to present our data in an interactive essay format,
-                named scrollytelling.</p>
+            <p class="desc-text">Through targeted querying of the database, we were able to source the numbers of
+                unnamed characters at any given event or location. Since we wanted to focus on high-intensity events, we
+                picked events that featured religious conflict in our Partition texts. Our maps show the percentage of
+                unnamed characters in events of religious conflict in various texts that deal with partition. This data
+                is further categorised using the gender identities of the unnamed characters, and the modalities of the
+                spaces they are found in.
+            </p>
+            <p class="desc-text">
+                In developing the interactive essay, we employed a scrolly-telling format, which involves presenting
+                content dynamically and sequentially as the user scrolls through the content. To show changes in
+                geospatial elements, we used Mapbox for a flexible map component. One of our priorities was to describe
+                our findings in an intuitive format since the site was to be published online for perusal. Hence, the
+                interface was designed to be easily navigable, with a particular emphasis on the reader’s independent
+                exploration. This means that a visitor of the site should be able to play around with data
+                visualisations and draw conclusions in conjunction with our existing research. This was achieved through
+                the incorporation of multiple view options with radio buttons, along with clear legends and thoughtful
+                styling. Additionally, accessibility was a key consideration. We used colourblind-friendly palettes
+                throughout to ensure inclusivity and a seamless experience for all users.
+            </p>
+            <div class="col-auto text-center mx-auto">
+                <img src="../assets/partitionanonres1.jpg" class="resource-img-md img-fluid rounded">
+                <p class="cap-text">Final site interface</p>
+            </div>
         </div>
         <div class="row gap-3 mb-5">
             <h4><b class="det-heading">NEXT STEPS</b></h4>
-            <p class="desc-text">adding another layer of data segmentation: religion, would be interesting to see the
-                demographics of unnamed characters</p>
+            <p class="desc-text">If given a chance to revise or build upon our work, I would focus on the following:</p>
+            <ul class="custom-list">
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Tracking character paths</b>:
+                        By focusing on a character’s geospatial and narrative path, we could get insight into the
+                        lifespan of unnamed characters within the novel. This would provide a nuanced perspective on the
+                        role they play within conflict.
+
+
+                    </p>
+                </li>
+                <li>
+                    <p class="desc-text">
+                        <i class="bi bi-flower2" style="color: #a09e2abf;"></i> <b>Improved interactivity</b>:
+                        The site can actively guide readers toward specific views throughout the essay. Explicit
+                        pointers and tooltips can be integrated into the narrative, encouraging readers to experiment
+                        with the data.
+                    </p>
+                </li>
+            </ul>
         </div>
         <div class="row gap-3 mb-5">
             <h4><b class="det-heading">TAKEAWAYS</b></h4>
-            <p class="desc-text"> use of computational methods in humanities; accessibility styling: legends, colorblind
-                features
+            <p class="desc-text"> This was an ideal introduction to the application of computational methods in
+                humanities research. I realised the power of data in <b>uncovering hidden narratives</b> since we
+                focused on
+                amplifying the voices of individuals otherwise overlooked in literary accounts. Another key lesson was
+                our conscious commitment to <b>pervasive inclusivity design</b>. This ensured that our work was
+                accessible to
+                a large audience across disciplines. That was my biggest takeaway, working with and for
+                <b>multidisciplinary</b> groups. I was the sole Computer Science student in the group and used this
+                unique opportunity
+                to collaborate with Literature students.
             </p>
         </div>
     </div>

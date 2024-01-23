@@ -14,11 +14,14 @@
 
 .card {
   border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card-img {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);;
+}
+
+.card-img:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cap-text {

@@ -1,3 +1,26 @@
+.back-to-top {
+  background-color: rgb(32, 32, 32);
+  color: #e4e4e4;
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  display: none;
+}
+
+.back-to-top:hover {
+  background-color: rgb(68, 68, 68);
+  color: #e4e4e4;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .cap-text {
   color: #646464;
   font-size: 0.9rem;
@@ -47,7 +70,7 @@
 
 .out-link {
   text-decoration: none;
-  color: #afaeae;
+  color: #a5a5a5;
 }
 
 .nav-link {

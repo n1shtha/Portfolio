@@ -147,3 +147,18 @@
   from{border-right-color: #c5c334bf;}
   to{border-right-color: transparent;}
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

@@ -10,9 +10,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="../index.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-        async></script>
+    <script src="https://cdn.rawgit.com/desandro/imagesloaded/v4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.masonry/4.2.2/jquery.masonry.min.js"></script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -48,8 +47,7 @@
                 digital design and photography. Also includes interdisciplinary research work. For more
                 structured, end-to-end projects please see <a href="overview" class="out-link">Work</a>.</p>
         </div>
-        <div class="row mt-5 mb-5" data-masonry='{"percentPosition": true }'
-            style="position: relative; min-height: 1720px;">
+        <div class="row mt-5 mb-5" id="masonry-container" style="position: relative; min-height: 1720px;">
             <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0%;">
                 <div class="card">
                     <div>
@@ -197,6 +195,16 @@
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+    <script>
+        // Wait for all images to be loaded before initializing Masonry
+        $('#masonry-container').imagesLoaded(function () {
+            // Initialize Masonry
+            $('#masonry-container').masonry({
+                itemSelector: '.col-sm-6',
+                percentPosition: true
+            });
+        });
+    </script>
     <script src="../index.js"></script>
 </body>
 

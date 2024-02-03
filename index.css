@@ -1,3 +1,12 @@
+.glass-background {
+background: rgba(246, 245, 245, 0.06);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+}
+
+
 .back-to-top {
   background-color: rgb(32, 32, 32);
   color: #e4e4e4;
